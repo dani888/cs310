@@ -1,0 +1,53 @@
+memo.txt 
+pa3 cs310 Nurit Haspel
+Daniel.Werminghausen, id #: 01609539
+
+
+
+1.)
+coins.txt:
+140
+1 10 21 34 70 100
+
+Result:
+Change we need : 140
+Coins we have : 1 10 21 34 70 100
+Number of coins 2
+Coins : 70 70
+
+
+
+2.) 
+
+	1.) x = ”AACAGTTACC” and y = ”TAAGGTCA”?
+danwaba@itserver6:~/cs310/pa3/classes$ java -cp .:../lib/algs4.jar cs310.EditDistance < input.txt 	
+a : AACAGTTACC
+b : TAAGGTCA
+looks like 7 is the optimal Edit Distance.
+A - 2
+A T 1
+C A 1
+A A 0
+G G 0
+T G 1
+T T 0
+A C 1
+C A 1
+C - 2
+
+
+
+	2.) The run time of the DP algorithm will be fast 
+	due to using a Hashmap.
+
+	3.) On the otherhand the space required to implement 
+	the algorithm will be alot due to using a Hashmap, But
+	it is fast!
+
+
+
+3.) 
+
+danwaba@itserver6:~/cs310/pa3/classes$ java -cp .:../lib/algs4.jar edu.princeton.cs.algs4.HexDump 16 < abra.txt
+41 42 52 41 43 41 44 41 42 52 41 21
+96 bits

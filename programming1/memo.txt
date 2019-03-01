@@ -1,0 +1,65 @@
+memo.txt 
+pa1 cs310 Nurit Haspel
+Daniel.Werminghausen, id #: 01609539
+
+
+1. For the alternative deletion (question 1): How many items does the table physically have before and
+after deletion? How many ”valid” items does the table physically have before and after deletion?
+
+A 8
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+S 0
+X 7
+10              Before: 10  
+-----------
+C 4
+E 12
+H 5
+L 11
+M 9
+P 10
+R 3
+X 7
+8				After deleting A & S = 8, 
+
+
+2. For question 2: How many ms did every table take?
+
+Milisec's it took to count words in LinearProbingHashST :40
+Milisec's it took to count words in SeperatChainingHashST :61
+Milisec's it took to count words in Symbol Table ST :88
+Milisec's it took to count words in SequentialSearchST :39270
+
+
+3. Does it (approximately) correspond to the expected insert and search performance for each table? No
+need to perform a detailed analysis, but please mention what you know about the expected runtime
+for each one of the lookup table types.
+
+LinearProbingHashST was expected to be the fastest because it is linear and it was fast, around 40 mili seconds
+SeperatChainingHashST is fast, has simple collision handling and good space utilization
+Symbol Table ST Linear and Seperate are faster then ST and sequentail search is the slowest so with that in mind it would take the expected run time of finishing 3rd of the 3 tables.
+SequentialSearchST was expected to take the longest due to the hint given on the assignment sheet
+
+4. How many words in total does the file tale.txt have? You can figure it out using wc -w tale.txt . wc
+is the word count unix command. Again, don’t worry about punctuations, spaces etc.
+
+Number of words = 139043 tale.txt
+
+
+5. How many unique words does the file have? For this, you’ll need to examine one of your tables. Hint:
+You can print out the table from one of your tests – strings and frequency, into a file, one entry per line, and see how many lines it has. Again, you can use the wordcount command in unix: wc -l <file
+name>.
+
+19695 the-file-name.txt
+
+6. What is the most common word and how many times does it appear? You can use the file you created
+in the previous question. Make sure you print into it not only the words, but the frequencies as well.
+To find the most common word you can sort by frequency. The Unix command sort -n -k 2 <file
+name> can help, or you can use excel if you wish. The Unix command sorts an input file, the -n flag
+tells it to sort numerically (the default is lexicographic), and the -k 2 flag sorts by the second field, which is the frequencies.
